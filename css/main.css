@@ -1,0 +1,219 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: 'Exo', sans-serif;
+  line-height: 1.5;
+  color: #3a3a3a;
+
+}
+
+p {
+  margin-bottom: 3em;
+  padding: 0 3em;
+  font-size: 1.2em;
+}
+
+h1,
+h3 {
+  font-family: 'Vollkorn', serif;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-family: Exo;
+  font-weight: 400;
+  font-size: 1.3em;
+}
+
+a {
+  text-decoration: none;
+  color: #3a3a3a;
+}
+
+img {
+  max-width: 100%;
+  padding-top: 1em;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+
+
+.name {
+  font-size: 3em;
+  margin: .5em;
+}
+
+.main-nav a {
+  display: block;
+  padding: 10px 15px;
+  background: #fff;
+  margin: 5px 1em;
+  font-weight: 700;
+  font-size: 1.25em;
+}
+
+.footer-name {
+  margin-left: 1em;
+  float: left;
+}
+
+.footer-nav {
+  float: right;
+  margin-top: 2em;
+  margin-right: 1em;
+}
+
+.main-nav a:hover,
+.footer-nav a:hover {
+  color: #d1d1d1;
+}
+
+/* ---- Layout Containers ---- */
+
+
+.wrapper {
+    text-align: center;
+}
+
+.main-header,
+.contact,
+.main-footer {
+  background: #f7f7f7;
+}
+
+.main-header {
+  margin-top: 0;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+.portfolio {
+    padding: 2em 1.5em;
+}
+
+.contact {
+  padding-top: 1em;
+  padding-bottom: 3em;
+  margin-bottom: 0;
+}
+
+.main-footer {
+  margin-top: 0;
+  border-top: 2px solid #d1d1d1;
+}
+
+
+/* ---- Page Elements ---- */
+
+.profile-photo {
+  margin-top: 4em;
+  margin-bottom: 1em;
+}
+
+.phone,
+.phone-number,
+.mail,
+.mail-address {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.phone-number,
+.mail-address {
+  font-weight:700;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+
+@media (min-width: 768px) {
+
+  .main-nav li,
+  .main-nav a {
+    display: inline-block;
+  }
+
+  .profile-photo {
+    float: right;
+    margin-top: 2em;
+    margin-right: 2em;
+    margin-left: 2em;
+  }
+
+  #about-me {
+    text-align: left;
+    margin-top: 2em;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .portfolio li {
+    display: inline-block;
+    padding: .5em;
+    float: left;
+    max-width: 50%;
+  }
+
+  .portfolio li:nth-child(odd) {
+    clear: left;
+  }
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  .name {
+    display: inline-block;
+    float: left;
+    text-align: left;
+  }
+
+  .main-nav {
+    float: right;
+    margin-top: 1.5em;
+  }
+
+  #about-me {
+    margin-top: 1em;
+    max-width: 50%;
+    display: inline-block;
+    float:left;
+  }
+
+  .portfolio li {
+    max-width: 33.33%;
+  }
+
+  .portfolio li:nth-child(odd) {
+    clear: none;
+  }
+
+  .portfolio li:nth-child(3n+1) {
+    clear: left;
+  }
+
+}
